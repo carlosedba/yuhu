@@ -1,0 +1,372 @@
+/*
+//
+//  Fonts
+//
+*/
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+ 
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-ThinItalic.ttf') format('truetype');
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+ 
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+ 
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Italic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+}
+ 
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+ 
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+} 
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+ 
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-BoldItalic.ttf') format('truetype');
+    font-weight: 700;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+ 
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-BlackItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}
+/*
+//
+//  General Structures
+//
+*/
+
+* {
+    -webkit-tap-highlight-color: rgba(0,0,0,0); /* make transparent link selection, adjust last value opacity 0 to 1.0 */
+}
+
+body {
+    -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
+    -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
+    -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
+    font-family: sans-serif;
+    background-color: #ebe9ed;
+    overflow: hidden;
+}
+
+paper-spinner {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: scale(0);
+    transition: transform 0.25s ease-in;
+    -webkit-transition: -webkit-transform 0.25s ease-in;
+    -moz-transition: -moz-transform 0.25s ease-in;
+    -o-transition: -o-transform 0.25s ease-in;
+    z-index: 9999;
+}
+
+paper-spinner /deep/ .circle {
+    border-color: #FF1744;
+}
+
+/*
+//
+//  Content Wrapper
+//
+*/
+
+core-drawer-panel {
+    color: #fff;
+    height: 100%;
+    transition: transform 0.55s ease-in-out;
+    -webkit-transition: -webkit-transform 0.55s ease-in-out;
+    -moz-transition: -moz-transform 0.55s ease-in-out;
+    -o-transition: -o-transform 0.55s ease-in-out;
+    overflow: hidden;
+}
+
+/* drawer is always visible on a wide screen
+   so menu button isn't required */
+core-drawer-panel:not([narrow]) #navicon {
+    display: none;
+}
+
+core-header-panel[drawer] {
+    background-color: #fff;
+    z-index: 9999;
+}
+
+core-header-panel[main] {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+core-header-panel[main] core-toolbar {
+    background-color: #6f00ff;
+    transition: all 0.35s linear;
+    -webkit-transition: all 0.35s ease;
+    -moz-transition: all 0.35s ease;
+    -o-transition: all 0.35s ease;
+}
+
+core-header-panel[main] core-toolbar .title {
+    font: 400 20px 'Roboto', sans-serif;
+    transition: all 0.25s ease-in-out;
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    -o-transition: all 0.25s ease-in-out;
+}
+
+core-header-panel[main] core-toolbar .right paper-icon-button {
+    padding: 10px 10px 10px 10px;
+}
+
+core-header-panel[main] img {
+    display: block;
+    position: absolute;
+    top: 15px;
+    max-width: 70px;
+    transition: all 0.25s ease-in-out;
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    -o-transition: all 0.25s ease-in-out;
+}
+
+core-header-panel[main] paper-input {
+    display: block;
+    position: absolute;
+    top: -5px;
+    width: 150px;
+    transition: all 0.25s ease-in-out;
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    -o-transition: all 0.25s ease-in-out;
+}
+
+core-header-panel[main] paper-input /deep/ ::-webkit-input-placeholder {
+    color: #f4f4f4;
+    font: 300 20px 'Roboto', sans-serif;
+}
+
+core-header-panel[main] paper-input /deep/ ::-ms-input-placeholder {
+    color: #f4f4f4;
+    font: 300 20px 'Roboto', sans-serif;
+}
+
+core-header-panel[main] paper-input /deep/ ::-moz-placeholder {
+    color: #f4f4f4;
+    font: 300 20px 'Roboto', sans-serif;
+}
+
+core-header-panel[main] paper-input /deep/ .unfocused-underline {
+    background-color: #cbcbcb;
+}
+
+core-header-panel[main] paper-input /deep/ .focused-underline {
+    background-color: #fff;
+}
+
+core-header-panel[main] paper-tabs {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+
+core-header-panel[main] paper-tabs.white::shadow #selectionBar {
+    background-color: #fff;
+}
+
+core-header-panel[main] paper-tabs.white paper-tab::shadow #ink {
+    color: #fff;
+}
+
+core-header-panel[main] core-toolbar paper-tab {
+    text-transform: uppercase;
+}
+
+yuhu-explore {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    align-content: center;
+    position: absolute;
+    margin: 5px 0 0 0;
+    padding: 0 10px 0 10px;
+    background-color: #ebe9ed;
+    overflow: hidden;
+    transform: translateX(-100%);
+    transition: transform 0.35s ease-in-out;
+    -webkit-transition: -webkit-transform 0.35s ease-in-out;
+    -moz-transition: -moz-transform 0.35s ease-in-out;
+    -o-transition: -o-transform 0.35s ease-in-out;
+}
+
+yuhu-my-questions {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    align-content: center;
+    position: absolute;
+    margin: 5px 0 0 0;
+    padding: 0 10px 0 10px;
+    background-color: #ebe9ed;
+    overflow: hidden;
+    transform: translateX(100%);
+    transition: transform 0.35s ease-in-out;
+    -webkit-transition: -webkit-transform 0.35s ease-in-out;
+    -moz-transition: -moz-transform 0.35s ease-in-out;
+    -o-transition: -o-transform 0.35s ease-in-out;
+}
+
+yuhu-favorites {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    align-content: center;
+    position: absolute;
+    margin: 5px 0 0 0;
+    padding: 0 10px 0 10px;
+    background-color: #ebe9ed;
+    overflow: hidden;
+}
+
+yuhu-favorites yuhu-card {
+    transition: all 0.35s ease;
+    -webkit-transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+}
+
+paper-fab {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #FF1744; /* 1DE9B6 6f00ff */
+    color: #fff;
+    transition: all 0.55s ease-in-out;
+    -webkit-transition: all 0.55s ease-in-out;
+    -moz-transition: all 0.55s ease-in-out;
+    -o-transition: all 0.55s ease-in-out;
+/*    z-index: 500;*/
+}
+
+/*
+//
+//  Animations
+//
+*/
+
+/* Close Animation for Core Drawer Panel */
+.close {
+    transform: scale(0.5) translateY(200%);
+}
+
+/* Sets the Active Tab */
+.active {
+    transform: translateX(0);
+}
+
+/* Hide animation for Yuhu New Question 
+.nq-hidden {
+    width: 0;
+    height: 0;
+    opacity: 0;
+    visibility: hidden;
+} */
+
+/* Hide animation for the logo */
+.logo-hidden {
+    opacity: 0;
+    transform: translateX(-50%);
+}
+
+/* Hide animation for the page title */
+.title-hidden {
+    opacity: 0;
+    transform: translateX(-100%);
+}
+
+/* Hide animation for the search input - Paper Input */
+.pi-hidden {
+    opacity: 0;
+    transform: translateX(50%);
+}
+
+/* Hide animation for the floating action button - Paper Fab */
+.fa-hidden {
+    opacity: 0;
+    transform: scale(0);
+}
+
+/* ShowUp animation for the loading spinner */
+.spinner-showup {
+    transform: scale(1.4);
+}
+.spinner {
+    transform: scale(1);
+}
+
+/* Favorite remove animation - Yuhu Card */
+.favorite-remove {
+    transform: translateX(100%) scale(0.9);
+}
+
+.navbar-hide {
+    opacity: 1;
+    transform: translateY(-100%);
+}

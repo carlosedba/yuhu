@@ -1,0 +1,35 @@
+<link rel="import" href="../../bower_components/core-icons/core-icons.html">
+<link rel="import" href="../../bower_components/core-icons/social-icons.html">
+<link rel="import" href="../../bower_components/core-menu/core-menu.html">
+<link rel="import" href="../../bower_components/paper-icon-button/paper-icon-button.html">
+<link rel="import" href="../../bower_components/paper-dropdown/paper-dropdown.html">
+<link rel="import" href="../../bower_components/paper-item/paper-item.html">
+<link rel="import" href="../../bower_components/paper-menu-button/paper-menu-button.html">
+<polymer-element name="yuhu-user" attributes="user rank">
+    <template>
+        <link rel="stylesheet" href="yuhu-user.css">
+        <section>
+            <!--<paper-menu-button>
+                <paper-icon-button icon="expand-more" noink></paper-icon-button>
+                <paper-dropdown class="dropdown">
+                    <core-menu class="menu">
+                        <paper-item noink>Share</paper-item>
+                        <paper-item noink>Settings</paper-item>
+                        <paper-item noink>Help</paper-item>
+                    </core-menu>
+                </paper-dropdown>
+            </paper-menu-button>-->
+            <img src="../../img/default-user.png" />
+            <div class="user">
+                <span class="name">{{user}}</span>
+                <div class="rank">
+                    <core-icon icon="social:mood"></core-icon>
+                    <span>{{rank}}</span>
+                </div>
+            </div>
+        </section>
+    </template>
+    <script>
+        Polymer();
+    </script>
+</polymer-element>

@@ -1,0 +1,46 @@
+article {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+}
+
+header {
+    height: 16px;
+    padding: 16px 16px 16px 16px;
+    color: #6f00ff;
+    font: 500 15px 'Roboto', sans-serif;
+}
+
+main {
+}
+
+div {
+    display: flex;
+    position: relative;
+    flex-flow: column nowrap;
+    justify-content: center;
+    height: 72px;
+    padding: 0 16px 0 16px;
+}
+
+paper-ripple {
+    color: #6f00ff;
+}
+
+.titulo {
+    font: 500 15px 'Roboto', sans-serif;
+    color: #000;
+}
+
+.valor {
+    font: 400 14px 'Roboto', sans-serif;
+    color: #a0a0a0;
+    padding: 4px 0 0 0;
+}
+
+.servidor {
+    display: block;
+    position: relative;
+}

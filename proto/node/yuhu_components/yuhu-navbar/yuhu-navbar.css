@@ -1,0 +1,98 @@
+core-toolbar {
+    background-color: #6f00ff;
+}
+
+core-toolbar .left2 {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+core-toolbar .right {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0 15px 0 0;
+    float: right;
+}
+
+core-toolbar .right paper-icon-button {
+    padding: 10px 10px 10px 10px;
+}   
+
+core-toolbar img {
+    max-width: 70px;
+    -webkit-transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+}
+
+core-toolbar paper-input {
+    -webkit-transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+}
+
+core-toolbar paper-input /deep/ ::-webkit-input-placeholder {
+    color: #f4f4f4;
+    font: 300 20px 'Roboto', sans-serif;
+}
+
+core-toolbar paper-input /deep/ ::-ms-input-placeholder {
+    color: #f4f4f4;
+    font: 300 20px 'Roboto', sans-serif;
+}
+
+core-toolbar paper-input /deep/ ::-moz-placeholder {
+    color: #f4f4f4;
+    font: 300 20px 'Roboto', sans-serif;
+}
+
+core-toolbar paper-input /deep/ .unfocused-underline {
+    background-color: #cbcbcb;
+}
+
+core-toolbar paper-input /deep/ .focused-underline {
+    background-color: #fff;
+}
+
+core-toolbar paper-tabs {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+
+core-toolbar paper-tabs.white::shadow #selectionBar {
+    background-color: #fff;
+}
+
+core-toolbar paper-tabs.white paper-tab::shadow #ink {
+    color: #fff;
+}
+
+core-toolbar paper-tab {
+    text-transform: uppercase;
+}
+
+/*
+//
+//  Animations
+//
+*/
+
+.active {
+    transform: translateX(0);
+}
+
+.hidden {
+    width: 0;
+    height: 0;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.lalala {
+    opacity: 0;
+    transform: translateX(-100%);
+}

@@ -1,0 +1,98 @@
+[
+    {
+        "title": "Quem foi o criador do Fordismo?",
+        "author": "Alexia",
+        "datetime": "13/04/2015",
+        "accesses": 10,
+        "tags": ["#fordismo"],
+        "content": "Preciso fazer um trabalho de sociologia e preciso saber quem foi o criador do Fordismo",
+        "replys": [
+            {
+                "id": 374561152,
+                "content": "bGFsYWxhbGFsYWxhbGFsYWxhIGFh",
+                "author": 5432112345,
+                "datetime": ""
+            },
+            {
+                "id": 192168015,
+                "content": "bGFsYWxhbGFsYWxhbGFsYWxhIGFh",
+                "author": 5432112345,
+                "datetime": ""
+            }
+        ],
+        "answers": [
+            {
+                "id": 427706909,
+                "content": "Foi Henry Ford",
+                "author": "Kauam",
+                "datetime": "13/04/2015 às 15:40"
+            }
+        ]
+    },
+    {
+        "title": "Onde fica o Vale do Silício?",
+        "author": "Lucas",
+        "datetime": "13/04/2015",
+        "accesses": 11,
+        "tags": ["#geografia"],
+        "content": "",
+        "replys": [
+            {
+                "id": 192168020,
+                "content": "bGFsYWxhbGFsYWxhbGFsYWxhIGFh",
+                "author": 5432112345,
+                "datetime": ""
+            },
+            {
+                "id": 192168020,
+                "content": "bGFsYWxhbGFsYWxhbGFsYWxhIGFh",
+                "author": 5432112345,
+                "datetime": ""
+            }
+        ],
+        "answers": [
+            {
+                "id": 192168105,
+                "content": "Se encontra na Califórnia nos EUA.",
+                "author": "",
+                "datetime": ""
+            }
+        ]
+    },
+    {
+        "title": "O que significa NOX?",
+        "author": "Milena",
+        "datetime": "12/04/2015",
+        "accesses": 4,
+        "tags": ["#química"],
+        "content": "",
+        "replys": [
+            {
+                "id": 192168020,
+                "content": "bGFsYWxhbGFsYWxhbGFsYWxhIGFh",
+                "author": 5432112345,
+                "datetime": ""
+            },
+            {
+                "id": 192168020,
+                "content": "bGFsYWxhbGFsYWxhbGFsYWxhIGFh",
+                "author": 5432112345,
+                "datetime": ""
+            }
+        ],
+        "answers": [
+            {
+                "id": 192168105,
+                "content": "Número de Oxidação",
+                "author": 5432112345,
+                "datetime": ""
+            },
+            {
+                "id": 192168105,
+                "content": "RXUgYWNobyBxIMOpIGRlc3NlIGplaXRvLi4u",
+                "author": 5432112345,
+                "datetime": ""
+            }
+        ]
+    }
+]

@@ -1,0 +1,210 @@
+article {
+    display: block;
+    position: fixed;
+    background-color: transparent;
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.37);
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    -o-transition: all 0.25s ease-in-out;
+    z-index: 1000;
+}
+
+header {
+    position: relative;
+    height: 50px;
+    padding: 8px 10px 8px 10px;
+    background-color: transparent;
+    z-index: 1005;
+    color: #fff;
+}
+
+header .wrapper {
+    display: inline-flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    align-content: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+    height: 100%;
+}
+
+header span {
+    font: 400 16px 'Roboto', sans-serif;
+}
+
+header paper-icon-button[icon="arrow-back"] {
+    margin: 0 5px 0 5px;
+}
+
+header paper-icon-button[icon="more-vert"] {
+    position: absolute;
+    top: 14px;
+    right: 16px;
+}
+
+main {
+    display: block;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+main .wrapper {
+    position: relative;
+    padding: 16px 32px 0 32px;
+}
+
+main .top {
+    display: block;
+    position: relative;
+    padding: 56px 0 16px 72px;
+    background-color: #FF1744;
+    z-index: 1004;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+}
+
+main .top paper-input-decorator {
+    width: 85%;
+}
+
+main .top paper-input-decorator input {
+    color: rgba(255, 255, 255, 1);
+    margin: 1px 0;
+}
+
+main .top paper-input-decorator[label="Pergunta"] input {
+    font: 500 22px 'Roboto', sans-serif;
+}
+
+main .top paper-input-decorator[label="Hashtag"] input {
+    font: 400 18px 'Roboto', sans-serif;
+    color: rgba(255, 255, 255, 1);
+}
+
+main .top paper-input-decorator /deep/ ::-webkit-input-placeholder {
+    font: 400 14px 'Roboto', sans-serif;
+    color: rgba(255, 255, 255, 0.8);
+    -webkit-transition: all 0.15s ease-in-out;
+    -moz-transition: all 0.15s ease-in-out;
+    -o-transition: all 0.15s ease-in-out;
+}
+
+main .top paper-input-decorator /deep/ ::-moz-placeholder {
+    font: 400 14px 'Roboto', sans-serif;
+    color: rgba(255, 255, 255, 0.8);
+    -webkit-transition: all 0.15s ease-in-out;
+    -moz-transition: all 0.15s ease-in-out;
+    -o-transition: all 0.15s ease-in-out;
+}
+
+main .top paper-input-decorator /deep/ ::-ms-input-placeholder {
+    font: 400 14px 'Roboto', sans-serif;
+    color: rgba(255, 255, 255, 0.8);
+    -webkit-transition: all 0.15s ease-in-out;
+    -moz-transition: all 0.15s ease-in-out;
+    -o-transition: all 0.15s ease-in-out;
+}
+
+main .top paper-input-decorator /deep/ .unfocused-underline {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+main .top paper-input-decorator /deep/ .focused-underline {
+    background-color: rgba(255, 255, 255, 1);
+}
+
+main .top paper-input-decorator /deep/ .floated-label .label-text {
+    font: 500 12px 'Roboto', sans-serif;
+    color: rgba(255, 255, 255, 1);
+}
+
+main .top paper-input-decorator /deep/ .input-body .label-text {
+    font: 500 12px 'Roboto', sans-serif;
+    color: rgba(255, 255, 255, 1);
+    -webkit-transition: all 0.15s ease-in-out;
+    -moz-transition: all 0.15s ease-in-out;
+    -o-transition: all 0.15s ease-in-out;
+}
+
+main .content {
+    display: block;
+    position: relative;
+    background-color: #fff;
+    width: 100%;
+    height: 100%;
+}
+
+main .content paper-input-decorator {
+    max-height: 160px;
+}
+
+main .content paper-input-decorator textarea {
+    font: 400 16px 'Roboto', sans-serif;
+    color: #000;
+    max-height: 130px;
+}
+
+main .content paper-input-decorator /deep/ ::-webkit-input-placeholder {
+    font: 400 14px 'Roboto', sans-serif;
+    color: rgba(255, 23, 68, 0.8);
+    -webkit-transition: all 0.15s ease-in-out;
+    -moz-transition: all 0.15s ease-in-out;
+    -o-transition: all 0.15s ease-in-out;
+}
+
+main .content paper-input-decorator /deep/ ::-moz-placeholder {
+    font: 400 14px 'Roboto', sans-serif;
+    color: rgba(255, 23, 68, 0.8);
+    -webkit-transition: all 0.15s ease-in-out;
+    -moz-transition: all 0.15s ease-in-out;
+    -o-transition: all 0.15s ease-in-out;
+}
+
+main .content paper-input-decorator /deep/ ::-ms-input-placeholder {
+    font: 400 14px 'Roboto', sans-serif;
+    color: rgba(255, 23, 68, 0.8);
+    -webkit-transition: all 0.15s ease-in-out;
+    -moz-transition: all 0.15s ease-in-out;
+    -o-transition: all 0.15s ease-in-out;
+}
+
+main .content paper-input-decorator /deep/ .unfocused-underline {
+    background-color: rgba(255, 23, 68, 0.5);
+}
+
+main .content paper-input-decorator /deep/ .focused-underline {
+    background-color: rgba(255, 23, 68, 1);
+}
+
+main .content paper-input-decorator /deep/ .floated-label .label-text {
+    font: 500 12px 'Roboto', sans-serif;
+    color: rgba(255, 23, 68, 1);
+}
+
+main .content paper-input-decorator /deep/ .input-body .label-text {
+    font: 500 12px 'Roboto', sans-serif;
+    color: rgba(255, 23, 68, 1);
+    -webkit-transition: all 0.15s ease-in-out;
+    -moz-transition: all 0.15s ease-in-out;
+    -o-transition: all 0.15s ease-in-out;
+}
+
+main .content paper-button {
+    position: absolute;
+    bottom: 220px;
+    right: 15px;
+    font: 500 14px 'Roboto', sans-serif;
+    color: #FF1744;
+}
+
+main .content paper-button core-icon {
+    margin: 0 5px 0 0;
+}
+
+.hidden {
+    transform: translate(40%, 45%) scale(0);
+    -webkit-transform: translate(40%, 45%) scale(0);
+    -moz-transform: translate(40%, 45%) scale(0);
+    -o-transform: translate(40%, 45%) scale(0);
+}

@@ -1,0 +1,34 @@
+{
+  "name": "YuhuApp",
+  "version": "0.0.2",
+  "description": "Uma nova forma de tirar suas dúvidas!",
+  "main": "app.js",
+  "dependencies": {
+    "browserify": "^9.0.3",
+    "express": "^4.12.3",
+    "gulp-livereload": "^3.8.0",
+    "gulp-sass": "^1.3.3",
+    "gulp-util": "^3.0.4",
+    "material-ui": "^0.7.1",
+    "react": "^0.12.2",
+    "react-tap-event-plugin": "^0.1.4",
+    "reactify": "^1.1.0"
+  },
+  "devDependencies": {
+    "gulp-livereload": "^3.8.0",
+    "gulp-sass": "^1.3.3"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "yuhu",
+    "duvida",
+    "questao",
+    "ajuda",
+    "pergunta",
+    "ask"
+  ],
+  "author": "Carlos Eduardo - carlosed_almeida@Live.com",
+  "license": "ISC"
+}

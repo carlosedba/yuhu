@@ -1,0 +1,27 @@
+<link rel="import" href="../../bower_components/core-toolbar/core-toolbar.html">
+<link rel="import" href="../../bower_components/paper-input/paper-input.html">
+<link rel="import" href="../../bower_components/paper-icon-button/paper-icon-button.html">
+<link rel="import" href="../../bower_components/paper-tabs/paper-tabs.html">
+<polymer-element noscript name="yuhu-navbar">
+    <template>
+        
+        <link rel="stylesheet" href="yuhu-navbar.css">
+        <core-toolbar class="medium-tall">
+            <paper-icon-button id="navicon" icon="menu"></paper-icon-button>
+            <div flex>
+                <img src="../../img/Yuhu%20Tipografia.png" />
+                <paper-input class="hidden" label="busca"></paper-input>
+            </div>
+                    
+            <paper-icon-button icon="search"></paper-icon-button>
+            <paper-icon-button icon="star"></paper-icon-button>
+            <div class="bottom fit" horizontal layout>
+                <paper-tabs class="white" selected="0" flex style="max-width: 600px;" horizontal center layout>
+                    <paper-tab inline flex center-center horizontal layout class="core-selected">Explorar</paper-tab>
+                    <paper-tab inline flex center-center horizontal layout>Minhas Perguntas</paper-tab>
+                </paper-tabs>
+            </div>
+        </core-toolbar>
+        
+    </template>
+</polymer-element>

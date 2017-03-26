@@ -1,0 +1,56 @@
+<link rel="import" href="../../bower_components/core-icons/core-icons.html">
+<link rel="import" href="../../bower_components/core-icons/social-icons.html">
+<link rel="import" href="../../bower_components/core-icons/communication-icons.html">
+<link rel="import" href="../../bower_components/paper-icon-button/paper-icon-button.html">
+<link rel="import" href="../../bower_components/paper-ripple/paper-ripple.html">
+<polymer-element name="yuhu-list" attributes="active">
+    <template>
+        <link rel="stylesheet" href="yuhu-list.css">
+        <section>
+            <ul class="top">
+                <li><core-icon icon="social:public"></core-icon>Explorar<paper-ripple fit></paper-ripple></li>
+                <li><core-icon icon="stars"></core-icon>Favoritos<paper-ripple fit></paper-ripple></li>
+                <li><core-icon icon="account-circle"></core-icon>Minhas Perguntas<paper-ripple fit></paper-ripple></li>
+                <li><core-icon icon="social:whatshot"></core-icon>Assuntos do Momento<paper-ripple fit></paper-ripple></li>
+            </ul>
+            <div class="separator"></div>
+            <ul class="bottom">
+                <li><span>Configurações</span><paper-ripple fit></paper-ripple></li>
+                <li><span>Ajuda e feedback</span><paper-ripple fit></paper-ripple></li>
+            </ul>
+        </section>
+    </template>
+    <script>
+        Polymer({
+            setActiveItem: function (item) {
+                var itens = this.shadowRoot.querySelectorAll('li');
+                
+                for (var i=0; i<itens.length; i++) {
+                    itens[i].removeAttribute('class');
+                }
+                
+                if (item == 'Explorar') {
+                    itens[0].classList.toggle('active');
+                } else if (item == 'Favoritos') {
+                    itens[1].classList.toggle('active');
+                } else if (item == 'Minhas Perguntas') {
+                    itens[2].classList.toggle('active');
+                } else if (item == 'Assuntos do Momento') {
+                    itens[3].classList.toggle('active');
+                } else if (item == 'Configurações') {
+                    itens[4].classList.toggle('active');
+                } else if (item == 'Ajuda e feedback') {
+                    itens[5].classList.toggle('active');
+                }
+            },
+            
+            ready: function () {
+                this.setActiveItem(this.active);
+            },
+            
+            attributeChanged: function (att, oldVal, newVal) {
+                this.setActiveItem(newVal);
+            }
+        });
+    </script>
+</polymer-element>

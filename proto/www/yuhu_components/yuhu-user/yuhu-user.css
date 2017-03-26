@@ -1,0 +1,55 @@
+section {
+    display: block;
+    position: relative;
+    width: 256px;
+    height: 126px;
+    background-color: #6600eb;
+    border-bottom: 2px solid #6100e0;
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.37);
+    z-index: 100;
+}
+
+img {
+    display: block;
+    float: left;
+    width: 50px;
+    height: auto;
+    margin: 40px 0 0 20px;
+    border: 2px solid #fff;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    border-radius: 35px;
+}
+
+paper-menu-button {
+    color: #fff;
+    float: right;
+}
+
+.user {
+    display: flex;
+    float: left;
+    flex-flow: column nowrap;
+    margin: 48px 0 0 10px;
+}
+
+.name {
+    font: 400 18px 'Roboto', sans-serif;
+    color: #fff;
+}
+
+.rank {
+    display: inline-block;
+    margin-top: -5px;
+}
+
+.rank core-icon {
+    max-width: 17px;
+    color: #ffc400;
+}
+
+.rank span {
+    font: 700 11px 'Roboto', sans-serif;
+    color: #f1f1f1;
+    text-transform: uppercase;
+}

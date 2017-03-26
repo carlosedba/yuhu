@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <link rel="stylesheet" type="text/css" href="css/main.css" />
+        <title>Yuhu App</title>
+        <script src="bower_components/webcomponentsjs/webcomponents.min.js"></script>
+        <link rel="import" href="bower_components/core-drawer-panel/core-drawer-panel.html">
+        <link rel="import" href="bower_components/core-header-panel/core-header-panel.html">
+        <link rel="import" href="bower_components/core-scroll-header-panel/core-scroll-header-panel.html">
+        <link rel="import" href="bower_components/core-toolbar/core-toolbar.html">
+        <link rel="import" href="bower_components/paper-icon-button/paper-icon-button.html">
+        <link rel="import" href="bower_components/paper-input/paper-input.html">
+        <link rel="import" href="bower_components/paper-tabs/paper-tabs.html">
+        <link rel="import" href="bower_components/paper-fab/paper-fab.html">
+        <link rel="import" href="bower_components/paper-spinner/paper-spinner.html">
+        <link rel="import" href="yuhu_components/yuhu-user/yuhu-user.html">
+        <link rel="import" href="yuhu_components/yuhu-list/yuhu-list.html">
+        <link rel="import" href="yuhu_components/yuhu-card/yuhu-card.html">
+        <link rel="import" href="yuhu_components/yuhu-new-question/yuhu-new-question.html">
+        <link rel="import" href="yuhu_components/yuhu-overlay/yuhu-overlay.html">
+    </head>
+    <body fullbleed unresolved>
+        
+        <core-drawer-panel>
+            
+            <core-header-panel drawer>
+                <yuhu-user user="Carlos Eduardo" rank="BOSS"></yuhu-user>
+                <yuhu-list active="Explorar"></yuhu-list>
+            </core-header-panel>
+            
+            <core-header-panel main>
+                
+                <core-toolbar class="medium-tall">
+                    <paper-icon-button id="navicon" icon="menu" core-drawer-toggle></paper-icon-button>
+                    <div flex>
+                        <img src="img/Yuhu%20Tipografia.png" />
+                        <paper-input class="pi-hidden" label="busca"></paper-input>
+                    </div>
+                    
+                    <paper-icon-button icon="search"></paper-icon-button>
+                    <paper-icon-button icon="star"></paper-icon-button>
+                    <div class="bottom fit" horizontal layout>
+                        <paper-tabs class="white" selected="0" flex style="max-width: 600px;" horizontal center layout>
+                            <paper-tab inline flex center-center horizontal layout>Explorar</paper-tab>
+                            <paper-tab inline flex center-center horizontal layout>Minhas Perguntas</paper-tab>
+                        </paper-tabs>
+                    </div>
+                </core-toolbar>
+                
+                <yuhu-stats></yuhu-stats>
+                
+                <yuhu-explore>
+                    <yuhu-card id="319841836" mode="public" date="13/04/2015" hashtag="fordismo" question="Quem foi o criador do Fordismo?" author="Alexia" answers="1" rating="-1" id=""></yuhu-card>
+                    <yuhu-card id="694868043" mode="public" date="13/04/2015" hashtag="geografia" question="Onde fica o Vale do Silício?" author="Lucas" answers="1" rating="5"></yuhu-card>
+                    <yuhu-card id="746135640" mode="public" date="12/04/2015" hashtag="química" question="O que significa NOX?" author="Milena" answers="1" rating="6"></yuhu-card>
+                    <yuhu-card mode="public" date="31/03/2015" hashtag="Português" question="O que é PIB?" author="Fernando" answers="1" rating="5"></yuhu-card>
+                </yuhu-explore>
+                
+                <yuhu-my-questions>
+                    <yuhu-card id="595466269" mode="private" date="04/04/2015" hashtag="tecnologia" question="O que é o Vale do Silício?" author="Kauam" answers="1" rating="8"></yuhu-card>
+                    <yuhu-card id="602980581" mode="private" date="15/03/2015" hashtag="Literatura" question="Quais são as características do Naturalismo?" author="Alexandre" answers="1" rating="5"></yuhu-card>
+                    <yuhu-card mode="private" date="29/03/2015" hashtag="PreservaçãoAmbiental" question="Como a preservação do meio ambiente pode ajudar na redução do consumo?" author="Carlos" answers="9" rating="-14"></yuhu-card>
+                    <yuhu-card mode="private" date="29/03/2015" hashtag="SistemasOperacionais" question="lalala lalala lala la la?" author="Carlos" answers="9" rating="-14"></yuhu-card>
+                </yuhu-my-questions>
+                
+                <yuhu-new-question display="hidden"></yuhu-new-question>
+                
+                <paper-fab icon="create"></paper-fab>
+                
+            </core-header-panel>
+        
+        </core-drawer-panel>
+        
+        <!-- Javascript Resources -->
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/yuhu.js"></script>
+        <script>
+            Yuhu.boot({
+                cordova: 0
+            });
+        </script>
+    </body>
+</html>

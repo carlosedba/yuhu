@@ -1,0 +1,49 @@
+<link rel="import" href="../../bower_components/core-icons/core-icons.html">
+<link rel="import" href="../../bower_components/paper-shadow/paper-shadow.html">
+<link rel="import" href="../../bower_components/paper-button/paper-button.html">
+<link rel="import" href="../../bower_components/paper-input/paper-autogrow-textarea.html">
+<link rel="import" href="../../bower_components/paper-icon-button/paper-icon-button.html">
+<link rel="import" href="../../bower_components/paper-input/paper-input.html">
+<polymer-element name="yuhu-new-question" attributes="display">
+    <template>
+        <link rel="stylesheet" href="yuhu-new-question.css">
+        <article class="popup {{display}}">
+            <header>
+                <div class="wrapper">
+                    <paper-icon-button icon="arrow-back"></paper-icon-button>
+                    <span>Nova Pergunta</span>
+                    <paper-icon-button icon="more-vert"></paper-icon-button>
+                </div>
+            </header>
+            <main>
+                <section class="top">
+                    <paper-input-decorator floatingLabel label="Pergunta">
+                        <input />
+                    </paper-input-decorator>
+                    <paper-input-decorator floatingLabel label="Hashtag">
+                        <input />
+                    </paper-input-decorator>
+<!--                    <paper-input floatingLabel label="Pergunta"></paper-input>-->
+<!--                    <paper-input floatingLabel label="Hashtag"></paper-input>-->
+                </section>
+                <section class="content">
+                    <div class="wrapper">
+                        <paper-input-decorator floatingLabel label="Descrição">
+                            <paper-autogrow-textarea rows="2"><textarea></textarea></paper-autogrow-textarea>
+                        </paper-input-decorator>
+                    </div>
+                    <paper-button><core-icon icon="check"></core-icon>Enviar</paper-button>
+                </section>
+            </main>
+        </article>
+    </template>
+    <script>
+        Polymer({
+            ready: function () {
+                var autogrow = this.shadowRoot.querySelector('paper-autogrow-textarea');
+                var textarea = this.shadowRoot.querySelector('textarea');
+                autogrow.update(textarea);
+            }
+        });
+    </script>
+</polymer-element>

@@ -1,0 +1,47 @@
+<link rel="import" href="../../bower_components/core-icons/core-icons.html">
+<link rel="import" href="../../bower_components/paper-ripple/paper-ripple.html">
+<link rel="import" href="../../bower_components/paper-icon-button/paper-icon-button.html">
+<polymer-element name="yuhu-card" attributes="mode date hashtag question author answers rating likes">
+    <template>
+        <link rel="stylesheet" href="yuhu-card.css">
+        <article mode="{{mode}}">
+            
+            <section class="rating">
+                <div class="wrapper">
+                    <div class="container">
+                        <paper-icon-button icon="expand-less"></paper-icon-button>
+                        <!--<span class="up"></span>-->
+                        <span class="number">{{rating}}</span>
+                        <paper-icon-button icon="star"></paper-icon-button>
+                        <!--<span class="down"></span>-->
+                        <paper-icon-button icon="expand-more"></paper-icon-button>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="question">
+                
+                <span class="lines"><span class="date">{{date}}</span></span>
+                <span class="hashtag">#{{hashtag}}</span>
+                <h1>{{question}}</h1>
+                
+                <div class="footer">
+                    <span class="answers">{{answers}} Respostas</span>
+                    
+                    <div class="author">
+                        <span>{{author}}</span>
+                        <img src="../../img/default-user.png" />
+                    </div>
+                    
+                </div>
+                
+            </section>
+            
+            <paper-ripple fit></paper-ripple>
+            
+        </article>
+    </template>
+    <script>
+        Polymer();
+    </script>
+</polymer-element>

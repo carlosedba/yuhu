@@ -1,0 +1,13 @@
+\bower_components
+\fonts
+\js\old.js
+\node_modules
+\bower.json
+\compile.cmd
+\cordova.html
+\exclude.txt
+\package.json
+\server.js
+\start.cmd
+\emulate.cmd
+\lalala.txt

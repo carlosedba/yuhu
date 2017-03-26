@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <link rel="stylesheet" type="text/css" href="css/main.css" />
+        <title>Yuhu App</title>
+        <script src="bower_components/webcomponentsjs/webcomponents.min.js"></script>
+        <link rel="import" href="bower_components/core-drawer-panel/core-drawer-panel.html">
+        <link rel="import" href="bower_components/core-header-panel/core-header-panel.html">
+        <link rel="import" href="bower_components/core-toolbar/core-toolbar.html">
+        <link rel="import" href="bower_components/paper-icon-button/paper-icon-button.html">
+        <link rel="import" href="bower_components/paper-input/paper-input.html">
+        <link rel="import" href="bower_components/paper-tabs/paper-tabs.html">
+        <link rel="import" href="bower_components/paper-fab/paper-fab.html">
+        <link rel="import" href="bower_components/paper-spinner/paper-spinner.html">
+        <link rel="import" href="yuhu_components/yuhu-user/yuhu-user.html">
+        <link rel="import" href="yuhu_components/yuhu-list/yuhu-list.html">
+        <link rel="import" href="yuhu_components/yuhu-configs/yuhu-configs.html">
+        <link rel="import" href="yuhu_components/yuhu-overlay/yuhu-overlay.html">
+    </head>
+    <body fullbleed unresolved>
+        
+        <core-drawer-panel>
+            
+            <core-header-panel drawer>
+                <yuhu-user user="Carlos Eduardo" rank="Boss"></yuhu-user>
+                <yuhu-list active="Configurações"></yuhu-list>
+            </core-header-panel>
+            
+            <core-header-panel main>
+                
+                <core-toolbar>
+                    <paper-icon-button icon="arrow-back"></paper-icon-button>
+                    <div flex>
+                        <span class="title">Configurações</span>
+                        <paper-input class="pi-hidden" label="busca"></paper-input>
+                    </div>
+                </core-toolbar>
+                
+                <yuhu-configs>
+                </yuhu-configs>
+                
+            </core-header-panel>
+        
+        </core-drawer-panel>
+        
+        <!-- Javascript Resources -->
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/yuhu.js"></script>
+        <script>
+            Yuhu.boot({
+                cordova: 0,
+                page: 'configs',
+                navbar: 'normal-title'
+            });
+        </script>
+    </body>
+</html>

@@ -1,0 +1,54 @@
+<link rel="import" href="../../bower_components/core-icons/core-icons.html">
+<link rel="import" href="../../bower_components/paper-ripple/paper-ripple.html">
+<polymer-element name="yuhu-configs" attributes="display">
+    <template>
+        <link rel="stylesheet" href="yuhu-configs.css">
+        <article>
+            <section class="servidor">
+                <header>Servidor</header>
+                <main>
+                    <div class="ip">
+                        <span class="titulo">IP</span>
+                        <span class="valor">192.168.0.27</span>
+                        <paper-ripple fit></paper-ripple>
+                    </div>
+                    <div class="porta">
+                        <span class="titulo">Porta</span>
+                        <span class="valor">1000</span>
+                        <paper-ripple fit></paper-ripple>
+                    </div>
+                </main>
+            </section>
+            <section class="conta">
+                <header>Conta</header>
+                <main>
+                    <div class="nome">
+                        <span class="titulo">Nome</span>
+                        <span class="valor">Carlos Eduardo</span>
+                        <paper-ripple fit></paper-ripple>
+                    </div>
+                    <div class="email">
+                        <span class="titulo">E-mail</span>
+                        <span class="valor">carlosed_almeida@live.com</span>
+                        <paper-ripple fit></paper-ripple>
+                    </div>
+                    <div class="senha">
+                        <span class="titulo">Senha</span>
+                        <span class="valor">********</span>
+                        <paper-ripple fit></paper-ripple>
+                    </div>
+                    <div class="deletar">
+                        <span class="titulo">Deletar sua Conta</span>
+                        <paper-ripple fit></paper-ripple>
+                    </div>
+                </main>
+            </section>
+        </article>
+    </template>
+    <script>
+        Polymer({
+            ready: function () {
+            }
+        });
+    </script>
+</polymer-element>

@@ -1,0 +1,26 @@
+<polymer-element noscript name="yuhu-overlay">
+    <template>
+        <style>
+            section {
+                display: block;
+                position: fixed;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                z-index: 1000;
+                opacity: 0;
+                background-color: rgba(0, 0, 0, 0.3);
+                -webkit-transition: all 0.35s ease-in-out;
+                -moz-transition: all 0.35s ease-in-out;
+                -o-transition: all 0.35s ease-in-out;
+            }
+            
+            .visible {
+                opacity: 1;
+            }
+        </style>
+        
+        <section>
+        </section>
+    </template>
+</polymer-element>
