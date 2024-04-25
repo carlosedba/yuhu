@@ -9,5 +9,7 @@ In 2015, I had already been coding for about 6-7 years, and I developed this app
 The purpose was not for it to actually launch and be public, but to work as a proof of concept, and it turned out really great.
 
 ![](visual/2Manual2.png?raw=true)
+
 ![](visual/2Manual3.png?raw=true)
+
 ![](visual/2Manual4.png?raw=true)
