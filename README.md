@@ -1,6 +1,6 @@
 # Yuhu
 
-![](visual/Yuhu Flat Logo.png?raw=true | width=100)
+![](visual/Yuhu Flat Logo.png?raw=true|width=100)
 
 This project was developed between March and April of 2015. My high school years were spent in a school that followed a different methodology from the usual in my country. Each semester we switched classes, and every class had a theme.
 
