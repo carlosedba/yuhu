@@ -10,6 +10,6 @@ The purpose was not for it to actually launch and be public, but to work as a pr
 
 ![](visual/2Manual2.png?raw=true)
 
-![](visual/2Manual3.png?raw=true)
+![](visual/3Manual3.png?raw=true)
 
-![](visual/2Manual4.png?raw=true)
+![](visual/4Manual4.png?raw=true)
