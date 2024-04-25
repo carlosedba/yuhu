@@ -1,5 +1,7 @@
 <img src="visual/Yuhu Flat Logo.png?raw=true" width="150">
+
 ---
+
 This project was developed between March and April of 2015. My high school years were spent in a school that followed a different methodology from the usual in my country. Each semester we switched classes, and every class had a theme.
 
 I don't remember the theme of the semester during which we developed this app (I'll come back to change this if I remember it sometime), but we had the idea to create an app that allowed students to post their school-related questions, upvote/downvote them like Reddit does, and receive answers. And that's what I turned into reality.
